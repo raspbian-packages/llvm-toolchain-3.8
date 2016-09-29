@@ -153,7 +153,7 @@ if (NOT CMAKE_SYSTEM_NAME MATCHES "Windows" AND NOT __ANDROID_NDK__)
   endif()
 endif()
 # On FreeBSD/NetBSD backtrace() is provided by libexecinfo, not libc.
-if (CMAKE_SYSTEM_NAME MATCHES "FreeBSD" OR CMAKE_SYSTEM_NAME MATCHES "NetBSD")
+if ((CMAKE_SYSTEM_NAME MATCHES "FreeBSD" OR CMAKE_SYSTEM_NAME MATCHES "NetBSD") AND NOT CMAKE_SYSTEM_NAME STREQUAL "kFreeBSD")
   list(APPEND LLDB_SYSTEM_LIBS execinfo)
 endif()
 
