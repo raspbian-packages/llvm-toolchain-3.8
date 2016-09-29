@@ -1,0 +1,18 @@
+usr/lib/arm-linux-gnueabihf/libLLVM-3.8.so.1       usr/lib/llvm-3.8/lib/libLLVM-3.8.so
+usr/lib/arm-linux-gnueabihf/libLLVM-3.8.so.1       usr/lib/llvm-3.8/lib/libLLVM-3.8.so.1
+usr/lib/arm-linux-gnueabihf/libLLVM-3.8.so.1       usr/lib/llvm-3.8/lib/libLLVM-3.8.1.so.1
+usr/lib/arm-linux-gnueabihf/libLLVM-3.8.so.1       usr/lib/llvm-3.8/lib/libLLVM-3.8.1.so
+usr/lib/arm-linux-gnueabihf/libLLVM-3.8.so.1       usr/lib/arm-linux-gnueabihf/libLLVM-3.8.1.so.1
+
+usr/include/llvm-c-3.8/llvm-c usr/lib/llvm-3.8/include/llvm-c
+usr/include/llvm-3.8/llvm usr/lib/llvm-3.8/include/llvm
+usr/include/llvm-c-3.8/llvm-c usr/lib/llvm-3.8/build/include/llvm-c
+usr/include/llvm-3.8/llvm usr/lib/llvm-3.8/build/include/llvm
+
+usr/lib/llvm-3.8/include/ usr/lib/llvm-3.8/build/include
+usr/lib/llvm-3.8/lib/     usr/lib/llvm-3.8/build/lib
+usr/lib/llvm-3.8/share/   usr/lib/llvm-3.8/build/share
+usr/lib/llvm-3.8/ usr/lib/llvm-3.8/build/Release
+usr/lib/llvm-3.8/ usr/lib/llvm-3.8/build/Debug+Asserts
+
+usr/lib/llvm-3.8/share/llvm/cmake usr/share/llvm-3.8/cmake

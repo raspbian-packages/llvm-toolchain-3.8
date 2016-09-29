@@ -1,0 +1,5 @@
+clang/docs/_build/man/clang-3.8.1
+clang/tools/scan-build/man/scan-build-3.8.1
+debian/man/clang-check-3.8.1
+debian/man/scan-view-3.8.1
+debian/man/clang-apply-replacements-3.8.1
