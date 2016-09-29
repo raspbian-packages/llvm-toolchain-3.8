@@ -1,0 +1,10 @@
+clang/tools/clang-format/clang-format-3.8.py usr/share/vim/addons/syntax/
+clang/tools/clang-format/clang-format-diff-3.8 /usr/bin/
+usr/bin/clang-format-3.8
+usr/bin/git-clang-format-3.8
+usr/lib/llvm-3.8/bin/clang-format
+usr/lib/llvm-3.8/bin/git-clang-format
+usr/lib/llvm-3.8/share/clang/clang-format-diff.py usr/share/clang/clang-format-3.8/
+usr/lib/llvm-3.8/share/clang/clang-format.py usr/share/clang/clang-format-3.8/
+usr/lib/llvm-3.8/share/clang/clang-format.el usr/share/emacs/site-lisp/clang-format-3.8/
+usr/lib/llvm-3.8/share/clang/clang-format-sublime.py usr/share/clang/clang-format-3.8/

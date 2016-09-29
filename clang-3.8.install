@@ -1,0 +1,40 @@
+usr/lib/llvm-3.8/bin/clang
+usr/lib/llvm-3.8/bin/clang++
+usr/lib/llvm-3.8/bin/clang-check
+usr/lib/llvm-3.8/bin/clang-apply-replacements
+usr/lib/llvm-3.8/bin/clang-query
+usr/lib/llvm-3.8/bin/clang-rename
+usr/lib/llvm-3.8/bin/sancov
+usr/lib/llvm-3.8/share/scan-view/
+usr/lib/llvm-3.8/share/scan-build/
+usr/lib/llvm-3.8/share/man/man1/scan-build.1
+usr/lib/llvm-3.8/libexec/ccc-analyzer
+usr/lib/llvm-3.8/libexec/c++-analyzer
+
+usr/lib/llvm-3.8/bin/scan-view
+usr/lib/llvm-3.8/bin/clang-cl
+
+usr/lib/llvm-3.8/bin/scan-build
+usr/lib/llvm-3.8/bin/modularize
+usr/lib/llvm-3.8/bin/c-index-test
+
+usr/bin/c-index-test-3.8
+
+tools/clang/tools/scan-build-3.8      usr/share/clang/
+tools/clang/tools/scan-view-3.8       usr/share/clang/
+#usr/share/man/man1/clang.1     usr/share/man/man1/
+usr/lib/llvm-3.8/share/clang/cmake/
+# todo: check if it is not be moved
+#usr/lib/llvm-3.8/lib/cmake/clang/*.cmake usr/share/llvm-3.8/cmake/
+
+usr/bin/clang-3.8
+usr/bin/clang++-3.8
+usr/bin/clang-check-3.8
+usr/bin/clang-apply-replacements-3.8
+usr/bin/clang-query-3.8
+usr/bin/clang-rename-3.8
+usr/bin/sancov-3.8
+usr/bin/clang-cl-3.8
+usr/bin/modularize-3.8
+usr/bin/scan-build-3.8
+usr/bin/scan-view-3.8

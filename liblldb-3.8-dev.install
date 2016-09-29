@@ -1,0 +1,5 @@
+/usr/lib/llvm-3.8/include/lldb
+/usr/lib/llvm-3.8/lib/liblldb*a
+/usr/lib/llvm-3.8/lib/liblldb*so
+
+

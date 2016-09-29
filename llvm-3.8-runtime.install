@@ -1,0 +1,6 @@
+usr/lib/llvm-3.8/bin/lli
+
+usr/bin/lli-3.8
+
+debian/llvm-3.8-runtime.binfmt                  usr/share/binfmts/
+
