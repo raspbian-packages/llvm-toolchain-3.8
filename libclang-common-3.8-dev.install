@@ -1,0 +1,14 @@
+usr/lib/llvm-3.8/lib/clang/3.8.1/include
+
+usr/lib/llvm-3.8/lib/clang/3.8.1/lib
+usr/lib/llvm-3.8/lib/clang/3.8.1/*.txt
+
+#usr/lib/clang/3.8.1/lib             /usr/lib/clang/3.8/
+#usr/lib/clang/3.8.1/include/         /usr/include/clang/3.8/
+
+usr/lib/llvm-3.8/bin/clang-tblgen
+usr/lib/llvm-3.8/bin/yaml-bench
+
+usr/bin/clang-tblgen-3.8
+usr/bin/yaml-bench-3.8
+

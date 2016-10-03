@@ -1,0 +1,9 @@
+usr/lib/llvm-3.8/bin/lldb*
+usr/lib/llvm-3.8/bin/lldb-mi*
+usr/lib/llvm-3.8/bin/lldb-server*
+usr/lib/llvm-3.8/bin/lldb-argdumper
+
+usr/bin/lldb-3.8*
+usr/bin/lldb-server-3.8*
+usr/bin/lldb-mi-3.8*
+usr/bin/lldb-argdumper-3.8

@@ -1,0 +1,9 @@
+usr/lib/llvm-3.8/bin/count
+usr/lib/llvm-3.8/bin/FileCheck
+usr/lib/llvm-3.8/bin/not
+
+utils/lit/*             /usr/lib/llvm-3.8/build/utils/lit/
+
+usr/bin/count-3.8
+usr/bin/FileCheck-3.8
+usr/bin/not-3.8
