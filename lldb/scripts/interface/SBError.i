@@ -57,6 +57,11 @@ checks that after calling the target.Launch() method there's no error
 condition and we get back a void process object.
 ") SBError;
 
+%{
+// https://llvm.org/bugs/show_bug.cgi?id=25468
+#pragma GCC diagnostic ignored "-Wformat-security"
+%}
+
 class SBError {
 public:
     SBError ();
