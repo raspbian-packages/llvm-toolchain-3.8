@@ -1,0 +1,5 @@
+usr/lib/llvm-3.8/bin/clang-tidy
+usr/lib/llvm-3.8/share/clang/run-clang-tidy.py
+usr/lib/llvm-3.8/share/clang/clang-tidy-diff.py
+
+usr/bin/clang-tidy-3.8
