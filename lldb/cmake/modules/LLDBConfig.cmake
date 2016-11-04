@@ -410,3 +410,5 @@ if (NOT LLDB_DISABLE_CURSES)
     list(APPEND system_libs ${CURSES_LIBRARIES})
     include_directories(${CURSES_INCLUDE_DIR})
 endif ()
+
+find_package(Backtrace REQUIRED)
