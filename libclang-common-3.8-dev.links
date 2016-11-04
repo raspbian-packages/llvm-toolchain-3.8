@@ -1,0 +1,7 @@
+usr/lib/llvm-3.8/lib/clang/3.8.1/include usr/include/clang/3.8/include
+usr/lib/llvm-3.8/lib/clang/3.8.1/include usr/lib/clang/3.8/include
+usr/lib/llvm-3.8/lib/clang/3.8.1/lib usr/lib/clang/3.8/lib
+usr/lib/llvm-3.8/lib/clang/3.8.1/include usr/include/clang/3.8.1/include
+usr/lib/llvm-3.8/lib/clang/3.8.1/include usr/lib/clang/3.8.1/include
+usr/lib/llvm-3.8/lib/clang/3.8.1/lib usr/lib/clang/3.8.1/lib
+
