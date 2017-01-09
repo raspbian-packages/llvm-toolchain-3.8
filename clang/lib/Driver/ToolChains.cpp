@@ -3019,6 +3019,8 @@ void Bitrig::AddClangCXXStdlibIncludeArgs(const ArgList &DriverArgs,
       DriverArgs.hasArg(options::OPT_nostdincxx))
     return;
 
+  addSystemInclude(DriverArgs, CC1Args, "/usr/include/clang/" + std::string(CLANG_VERSION_STRING) + "/include/");
+
   switch (GetCXXStdlibType(DriverArgs)) {
   case ToolChain::CST_Libcxx:
     addSystemInclude(DriverArgs, CC1Args,
