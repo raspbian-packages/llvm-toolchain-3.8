@@ -21,7 +21,7 @@ ifneq ($(findstring -linux-,$(CompilerTargetTriple)),)
 
 # Define configs only if arch in triple is i386 or x86_64
 CompilerTargetArch := $(firstword $(subst -, ,$(CompilerTargetTriple)))
-ifeq ($(call contains,i386 x86_64,$(CompilerTargetArch)),true)
+ifeq ($(call contains,i386 x86_64 i586 i686,$(CompilerTargetArch)),true)
 
 # TryCompile compiler source flags
 # Returns exit code of running a compiler invocation.
@@ -35,7 +35,7 @@ TryCompile = \
     echo $$?)
 
 test_source = $(ProjSrcRoot)/make/platform/clang_linux_test_input.c
-ifeq ($(CompilerTargetArch),i386)
+ifneq (,$(filter $(CompilerTargetArch),i386 i586 i686))
   SupportedArches := i386
   ifeq ($(call TryCompile,$(CC),$(test_source),-m64),0)
     SupportedArches += x86_64
