@@ -57,3 +57,4 @@ clang-arm-default-vfp3-on-armv7a.patch
 lldb-server-path.diff
 lldb-server-link.diff
 cmake-arm-version-hack.patch
+remove-more-crap-in-clean-target
