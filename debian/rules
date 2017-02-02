@@ -605,5 +605,17 @@ override_dh_auto_clean:
 	rm -f $(CURDIR)/clang/tools/clang-format/clang-format-diff-$(LLVM_VERSION)
 	rm -f $(CURDIR)/clang/tools/clang-format/clang-format-$(LLVM_VERSION).py
 	rm -f `find . -name '*.pyc'`
+	rm -f clang/tools/scan-build-3.8/
+	rm -f clang/tools/scan-build/man/scan-build-3.8.1
+	rm -f clang/tools/scan-view-3.8/
+	rm -f debian/man/
+	rm -f utils/vim/ftdetect/llvm-3.8.vim
+	rm -f utils/vim/ftdetect/tablegen-3.8.vim
+	rm -f utils/vim/ftplugin/llvm-3.8.vim
+	rm -f utils/vim/ftplugin/tablegen-3.8.vim
+	rm -f utils/vim/indent/llvm-3.8.vim
+	rm -f utils/vim/llvm-3.8-vimrc
+	rm -f utils/vim/syntax/llvm-3.8.vim
+	rm -f utils/vim/syntax/tablegen-3.8.vim
 
 .PHONY: override_dh_strip preconfigure

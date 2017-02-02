@@ -17,6 +17,9 @@ llvm-toolchain-3.8 (1:3.8.1-17+rpi1) stretch-staging; urgency=medium
   [changes brought forward from 1:3.8.1-12+rpi2 by Peter Michael Green <plugwash@raspbian.org> at Mon, 03 Oct 2016 22:58:38 +0000]
   * Really disable testsuite.
 
+  [changes introduced in 1:3.8.1-17+rpi1 by Peter Michael Green]
+  * Remove more crap in clean target.
+
  -- Peter Michael Green <plugwash@raspbian.org>  Thu, 02 Feb 2017 06:05:39 +0000
 
 llvm-toolchain-3.8 (1:3.8.1-17) unstable; urgency=medium
