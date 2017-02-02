@@ -1,56 +1,6 @@
-llvm-toolchain-3.8 (1:3.8.1-17+rpi1) stretch-staging; urgency=medium
-
-  [changes brought forward from 1:3.8-2+rpi1 by Peter Michael Green <plugwash@raspbian.org> at Sat, 14 May 2016 21:43:35 +0000]
-  * Pass armv6-* as triplet rather than arm-* to hopefully stop llvm toolchain 
-    assuming armv7. (didn't work, it appears that Debian isn't currently using
-    the autoconf based build).
-  * Cleanup .pyc files in clean target.
-  * Add a hack to the cmake based build to force armv6 (unfortunately the cmake
-    based build relies on config.guess which assumes you want to build for the
-    hardware you are running on).
-  * Remove -march=armv7-a in compiler-rt/cmake/config-ix.cmake
-  * Add -DCOMPILER_RT_BUILD_BUILTINS=OFF to disable parts of compiler-rt that
-    are broken on lower arm architectures.
-  [changes introduced in 1:3.8.1-12+rpi1 by Peter Michael Green]
-  * Disable testsuite, it seems to be crashing buildboxes.
-
-  [changes brought forward from 1:3.8.1-12+rpi2 by Peter Michael Green <plugwash@raspbian.org> at Mon, 03 Oct 2016 22:58:38 +0000]
-  * Really disable testsuite.
-
- -- Peter Michael Green <plugwash@raspbian.org>  Thu, 02 Feb 2017 06:05:39 +0000
-
-llvm-toolchain-3.8 (1:3.8.1-17) unstable; urgency=medium
-
-  * Disable NEON generation on armhf (Closes: #841474, #842142)
-    Thanks to Pauli for the fix
-  * Remove the info section from the generated manpages (Closes: #846269)
-  * Fix the path to lldb-server (to lldb-server-3.8) (Closes: #846638)
-  * Also install python-lldb-3.8 when installing lldb-3.8 (Closes: #846612)
-  * Disable libedit usage in lldb because of garbage (Closes: #846616)
-  * d/p/lldb-server-link.diff Fix the lldb hang. It was due to a linking issue.
-    Thanks to Pavel Labath (Closes: #846640)
-
- -- Sylvestre Ledru <sylvestre@debian.org>  Mon, 09 Jan 2017 21:24:17 +0100
-
-llvm-toolchain-3.8 (1:3.8.1-16) unstable; urgency=medium
-
-  * Fix segfaults in the memory sanitizers (Closes: #842642)
-    Caused by the newer glibc. Many thanks for Nobert Lange for everything
-  * Enable the sanitizers testsuite
-
- -- Sylvestre Ledru <sylvestre@debian.org>  Fri, 11 Nov 2016 16:14:31 +0100
-
-llvm-toolchain-3.8 (1:3.8.1-15) unstable; urgency=medium
-
-  * Limit build-deps on g++-multilib where it is available:
-    amd64 i386 kfreebsd-amd64 mips mips64 mips64el mipsel powerpc ppc64 s390
-    s390x sparc sparc64 x32
-
- -- Sylvestre Ledru <sylvestre@debian.org>  Sun, 06 Nov 2016 15:44:34 +0100
-
 llvm-toolchain-3.8 (1:3.8.1-14) unstable; urgency=medium
 
-  * libclang-common-3.8-dev: missing multilib binaries for the sanitizer
+  * libclang-common-3.9-dev: missing multilib binaries for the sanatizer
     libraries (Closes: #841923)
     Many thanks to Norbert Lange for the changes
 
