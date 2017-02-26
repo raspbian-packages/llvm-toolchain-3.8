@@ -616,5 +616,6 @@ override_dh_auto_clean:
 	rm -f utils/vim/llvm-3.8-vimrc
 	rm -f utils/vim/syntax/llvm-3.8.vim
 	rm -f utils/vim/syntax/tablegen-3.8.vim
+	chmod 644 autoconf/config.guess.hack
 
 .PHONY: override_dh_strip preconfigure
