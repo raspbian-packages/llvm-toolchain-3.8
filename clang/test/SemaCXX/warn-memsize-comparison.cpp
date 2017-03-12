@@ -11,8 +11,6 @@ extern "C" int strncasecmp(const char *s1, const char *s2, size_t n);
 extern "C" char *strncpy(char *dst, const char *src, size_t n);
 extern "C" char *strncat(char *dst, const char *src, size_t n);
 extern "C" char *strndup(const  char *src, size_t n);
-extern "C" size_t strlcpy(char *dst, const char *src, size_t size);
-extern "C" size_t strlcat(char *dst, const char *src, size_t size);
 
 void f() {
   char b1[80], b2[80];
@@ -69,18 +67,6 @@ void f() {
     expected-note {{did you mean to compare}} \
     expected-note {{explicitly cast the argument}}
   if (strndup(b1, sizeof(b1)) != 0) {}
-
-  if (strlcpy(b1, b2, sizeof(b1) != 0)) {} // \
-    expected-warning{{size argument in 'strlcpy' call is a comparison}} \
-    expected-note {{did you mean to compare}} \
-    expected-note {{explicitly cast the argument}}
-  if (strlcpy(b1, b2, sizeof(b1)) != 0) {}
-
-  if (strlcat(b1, b2, sizeof(b1) != 0)) {} // \
-    expected-warning{{size argument in 'strlcat' call is a comparison}} \
-    expected-note {{did you mean to compare}} \
-    expected-note {{explicitly cast the argument}}
-  if (strlcat(b1, b2, sizeof(b1)) != 0) {}
 
   if (memset(b1, 0, sizeof(b1) / 2)) {}
   if (memset(b1, 0, sizeof(b1) >> 2)) {}
