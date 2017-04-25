@@ -26,9 +26,9 @@ ISL_CODEGEN_FILES= CodeGen/IslAst.cpp \
                    CodeGen/IslNodeBuilder.cpp \
                    CodeGen/CodeGeneration.cpp
 
-POLLY_JSON_FILES= JSON/json_reader.cpp \
-                  JSON/json_value.cpp \
-                  JSON/json_writer.cpp
+#POLLY_JSON_FILES= JSON/json_reader.cpp \
+#                  JSON/json_value.cpp \
+#                  JSON/json_writer.cpp
 
 ISL_FILES= External/isl/basis_reduction_tab.c \
            External/isl/isl_aff.c \
@@ -146,4 +146,5 @@ SOURCES= Polly.cpp \
 #
 include $(LEVEL)/Makefile.common
 
-LIBS += $(POLLY_LD) $(POLLY_LIB)
+LIBS += $(POLLY_LD) $(POLLY_LIB) -ljsoncpp
+
