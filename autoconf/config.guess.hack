@@ -1,2 +1,2 @@
 #!/bin/bash -e
-$(dirname "$0")/config.guess | sed -r s/arm[a-zA-Z0-9]*/armv6/
+dpkg-architecture -qDEB_HOST_GNU_TYPE | sed -r s/arm/armv6/
