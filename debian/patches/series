@@ -59,3 +59,4 @@ lldb-server-link.diff
 add_symbols_versioning.patch
 cmake-arm-version-hack.patch
 remove-more-crap-in-clean-target
+use-dpkg-architecture-instead-of-config.
