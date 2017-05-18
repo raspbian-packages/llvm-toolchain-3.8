@@ -1,3 +1,4 @@
 usr/lib/arm-linux-gnueabihf/liblldb-3.8.so.1       usr/lib/arm-linux-gnueabihf/liblldb-3.8.so
 usr/lib/arm-linux-gnueabihf/liblldb-3.8.so.1       usr/lib/llvm-3.8/lib/liblldb.so.1
+usr/lib/arm-linux-gnueabihf/liblldb-3.8.so.1       usr/lib/llvm-3.8/lib/liblldb-3.8.so.1
 

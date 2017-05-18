@@ -1,2 +1,2 @@
-#/usr/lib/ocaml/llvm-3.8	/usr/lib/ocaml/
-#usr/lib/llvm-3.8/docs/llvm/ocamldoc/html	usr/share/doc/libllvm-3.8-ocaml-dev/
+/usr/lib/ocaml/llvm-3.8	/usr/lib/ocaml/
+usr/lib/llvm-3.8/docs/ocaml/html/html	usr/share/doc/libllvm-3.8-ocaml-dev/
