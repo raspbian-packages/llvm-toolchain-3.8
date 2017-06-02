@@ -43,7 +43,9 @@ else()
   target_link_libraries(lldb-server ${LLDB_USED_LIBS})
   target_link_libraries(lldb-server ${CLANG_USED_LIBS})
 endif()
-llvm_config(lldb-server ${LLVM_LINK_COMPONENTS})
+if (NOT LLVM_LINK_LLVM_DYLIB)
+  llvm_config(lldb-server ${LLVM_LINK_COMPONENTS})
+endif()
 
 target_link_libraries(lldb-server ${LLDB_SYSTEM_LIBS})
 
