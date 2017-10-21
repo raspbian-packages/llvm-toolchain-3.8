@@ -161,6 +161,7 @@ BuildRuntimeLibraries:
 	  ProjSrcRoot=$(COMPILERRT_SRC_ROOT) \
 	  ProjObjRoot=$(PROJ_OBJ_DIR) \
 	  CC="$(ToolDir)/clang" \
+	  LD_LIBRARY_PATH=../build-llvm/Release/lib \
 	  VERBOSE=$(VERBOSE) \
 	  $(RuntimeDirs:%=clang_%)
 .PHONY: BuildRuntimeLibraries
