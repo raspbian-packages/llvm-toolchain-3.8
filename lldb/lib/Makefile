@@ -192,7 +192,7 @@ ifeq ($(HOST_OS), $(filter $(HOST_OS), Linux GNU GNU/kFreeBSD))
     LLVMLibsOptions += -Wl,--no-undefined
     # Link in python
     LLVMLibsOptions += $(PYTHON_BUILD_FLAGS) -lrt -ledit -lncurses -lpanel -lpthread
-    LLVMLibsOptions += -Wl,--soname,lib$(LIBRARYNAME)$(SHLIBEXT).$(SONAME_EXTENSION)
+    LLVMLibsOptions += -Wl,--soname,lib$(LIBRARYNAME)-$(LLVM_VERSION_MAJOR).$(LLVM_VERSION_MINOR)$(SHLIBEXT)
     ifneq (,$(filter $(shell dpkg-architecture -qDEB_HOST_ARCH), armel mips mipsel powerpc powerpcspe))
      # Link GCC atomic helper library
      LLVMLibsOptions += -latomic
