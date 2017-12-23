@@ -11,6 +11,9 @@ LEVEL := ../..
 TOOLNAME := opt
 LINK_COMPONENTS := bitreader bitwriter asmparser irreader instrumentation scalaropts objcarcopts ipo vectorize all-targets codegen passes
 
+# Crappy workaround to make sure it links correctly.
+LLVMLibsOptions := ../../lib/IR/Release*/Pass.o
+
 # Support plugins.
 NO_DEAD_STRIP := 1
 
