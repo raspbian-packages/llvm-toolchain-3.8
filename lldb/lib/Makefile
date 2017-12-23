@@ -16,6 +16,7 @@ LIBRARYNAME = lldb
 NO_BUILD_ARCHIVE = 1
 LINK_LIBS_IN_SHARED = 1
 SHARED_LIBRARY = 1
+SONAME_EXTENSION = 1
 
 ifeq (,$(findstring -DLLDB_DISABLE_PYTHON,$(CXXFLAGS)))
 PYTHON_CONFIG?=	python-config
@@ -191,7 +192,7 @@ ifeq ($(HOST_OS), $(filter $(HOST_OS), Linux GNU GNU/kFreeBSD))
     LLVMLibsOptions += -Wl,--no-undefined
     # Link in python
     LLVMLibsOptions += $(PYTHON_BUILD_FLAGS) -lrt -ledit -lncurses -lpanel -lpthread
-    LLVMLibsOptions += -Wl,--soname,lib$(LIBRARYNAME)$(SHLIBEXT)
+    LLVMLibsOptions += -Wl,--soname,lib$(LIBRARYNAME)$(SHLIBEXT).$(SONAME_EXTENSION)
     ifneq (,$(filter $(shell dpkg-architecture -qDEB_HOST_ARCH), armel mips mipsel powerpc powerpcspe))
      # Link GCC atomic helper library
      LLVMLibsOptions += -latomic
