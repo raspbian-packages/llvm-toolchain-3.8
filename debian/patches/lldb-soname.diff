@@ -14,7 +14,7 @@
      LLVMLibsOptions += $(PYTHON_BUILD_FLAGS) -lrt -ledit -lncurses -lpanel -lpthread
 -    LLVMLibsOptions += -Wl,--soname,lib$(LIBRARYNAME)$(SHLIBEXT)
 +    LLVMLibsOptions += -Wl,--soname,lib$(LIBRARYNAME)$(SHLIBEXT).$(SONAME_EXTENSION)
-     ifneq (,$(filter $(shell dpkg-architecture -qDEB_HOST_ARCH), mips mipsel powerpc powerpcspe))
+     ifneq (,$(filter $(shell dpkg-architecture -qDEB_HOST_ARCH), armel mips mipsel powerpc powerpcspe))
       # Link GCC atomic helper library
       LLVMLibsOptions += -latomic
 --- a/lldb/source/API/CMakeLists.txt
